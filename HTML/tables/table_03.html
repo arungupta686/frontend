@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- rowspan: used for merge rows
+    colspan: used to merge columns -->
+
+    <table>
+        <tr>
+            <th colspan="4">TITLE</th>
+        </tr>
+        <tr>
+            <td colspan="2">Sub title</td>
+            <td colspan="2">Sub title</td>
+        </tr>
+        <tr>
+            <td>Items <br>
+                Items <br>
+                Items <br>
+            </td>
+            <td>123 <br>
+                123 <br>
+                123 <br>
+            </td>
+            <td>Items <br>
+                Items <br>
+                Items <br> 
+            </td>
+            <td>123 <br>
+                123 <br>
+                123 <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Sub Title</td>
+            <td colspan="2">Sub Title</td>
+        </tr>
+    </table>
+</body>
+
+</html>
