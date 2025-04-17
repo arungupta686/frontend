@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Nested Dropdown</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Base menu styles */
+    .menu {
+      background: #333;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      list-style: none;
+      background: #333;
+    }
+
+    .menu > li {
+      display: inline-block;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu li a:hover {
+      background: #444;
+    }
+
+    /* Hide submenus by default */
+    .menu li ul {
+      display: none;
+    }
+
+    /* Show submenu on hover */
+    .menu li:hover > ul {
+      display: block;
+    }
+
+    /* Make sure submenus show vertically */
+    .menu li ul li {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li>
+          <a href="#">Development</a>
+          <ul>
+            <li><a href="#">Frontend</a></li>
+            <li><a href="#">Backend</a></li>
+          </ul>
+        </li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main{
+            width:200px;
+            border-bottom:1px solid black;
+        }
+        .list{
+            padding:5px ;
+            display:none;
+        }
+        .main:hover .list{
+         display: block;
+         cursor: pointer;
+        }
+        .list:hover{
+            color:white;
+            background: black;
+        }
+        .main2{
+            
+            display: none;
+            height: 18px;
+            padding: 5px;
+        
+        }
+        .list2 {
+            padding: 5px;
+            border-bottom: 2px solid lightyellow;
+            display:none;
+            
+           
+        }
+        .main2:hover .list2 {
+         position: relative;
+         display: block;
+         cursor: pointer;
+        }
+        .list2:hover{
+           
+            color:black;
+            background: white
+        }
+       
+        .sub-list-container{
+            /* border:1px solid green; */
+            background-color: green;
+            color:white;
+            width: 200px;
+    margin-top: -23px;
+    margin-left: 195px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">drop downlist
+        <div class="list">item 1</div>
+        <div class="list">item 2</div>
+        <div class="list">item 3</div>
+        <div class="list">item 4</div>
+        <div class="list main2 ">
+            item 5
+                <div class="sub-list-container">
+                   <div class="list2">sub item 1</div>
+                   <div class="list2">sub item 2</div>
+                   <div class="list2">sub item 3</div>
+                   <div class="list2">sub item 4</div>
+               </div>
+        </div>
+    </div>
+    <div>content</div>
+    
+</body>
+</html>
