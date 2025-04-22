@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+           margin: 0px;
+           padding:0px;
+           
+        }
+        .container{
+            background: blue;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        #ball{
+            height:100px;
+            width:100px;
+            background: #B5FCCD;
+            position: relative;
+            top:20px;
+            left:30px;
+            border-radius:50%;
+            animation-name:ball;
+            animation-timing-function: linear;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction:alternate;
+
+        }
+        @keyframes ball {
+            0%{
+                left:30px;
+                top:20px;
+
+            }
+          100%
+          {left:1400px;
+            top:500px;
+
+          }
+            
+        }
+
+        .rightmove{
+            box-sizing: border-box;
+            width: 250px;
+            height:60px;
+            background:#FFEB55;
+            position: relative;
+            left: 10px;
+            top: 20px;
+            border-radius: 20px;
+            animation: rightmove linear 3s infinite  alternate 1s;
+
+            
+        }
+        @keyframes rightmove {
+            from{
+                top:20px;
+                left:0px;
+            }
+            to{
+                top:20px;
+                left:1400px
+            }
+            
+        }
+
+        .leftmove{
+            box-sizing: border-box;
+            width: 250px;
+            height:60px;
+            background:#FFEB55;
+            position: relative;
+            top:500px;
+            left:1400px;
+            border-radius: 20px;
+            animation: leftmove linear 3s infinite  alternate 0.8s;
+
+            
+        }
+        @keyframes leftmove {
+            from{
+                left:1420px;
+                top:500px;
+
+
+               
+            }
+            to{
+                left:10px;
+                top:500px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rightmove"></div>
+        <div id="ball"></div>
+        <div class="leftmove"></div>
+
+
+    </div>
+   
+    
+</body>
+</html>
