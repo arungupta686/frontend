@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry</title>
+    <style>
+        .box{
+            color:black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            padding: 50px;
+            text-align: center;
+        }
+        @media only  screen and   (max-width:300px)  {
+            
+            .demo1{
+                font-weight:500;
+                background-color: brown;
+                color: azure;
+
+            }
+            .demo2,.demo3{
+                display: none;
+            }
+        }  
+        @media only  screen and (min-width:300px) and   (max-width:700px)  {
+            
+            .demo2{
+                font-weight:500;
+                background-color: rgb(24, 45, 233);
+                color: azure;
+
+            }
+            .demo1,.demo3{
+                display: none;
+            }
+        }
+        @media only  screen and (min-width:700px)   {
+            
+            .demo3{
+                font-weight:500;
+                background-color: rgb(42, 161, 31);
+                color: azure;
+
+            }
+            .demo1,.demo2{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box demo1">this is box our content for 300px</div>
+    <div class="box demo2">this is box our content for 700px</div>
+    <div class="box demo3">this is box our content for 1020px</div>
+    
+</body>
+</html>

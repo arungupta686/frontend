@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            padding:20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Responsivenace for for mobile screen */
+        @media only screen  and (max-width:300px) {
+            .demo1{
+                background-color: aqua;
+            }
+            .demo2 , .demo3{
+                display: none;
+            }
+        }
+
+        /* Responsivenace for for tab screen */
+        @media only screen and (min-width: 300px) and (max-width:700px) {
+            .demo2{
+                background-color: seagreen;
+            }
+            .demo1 , .demo3{
+                display: none;
+            }
+        }
+         /* Responsivenace for for laptop screen and large screen */
+         @media only screen and (min-width: 700px)  {
+            .demo3{
+                background-color: rgb(83, 33, 185);
+            }
+            .demo1 , .demo2{
+                display: none;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="demo demo1">This is for screen upto 300px</div>
+    <div class="demo demo2">This is for screen between300px to 700px</div>
+    <div class="demo demo3">This is for screen between 700px to 1020px</div>
+</body>
+</html>
