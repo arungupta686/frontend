@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable in JS</title>
+</head>
+<body>
+    <script>
+        console.log(a)
+        var a=10; // gloabal scope and hosting in global scope
+        console.log(a);
+        
+
+        console.log(b) // cannot be access before its initialized
+        let b=100;// block scope and it have temporal dead zone (TDZ)
+        console.log(b)
+        b=200;
+        console.log(b)
+
+        console.log(once) // cannot be access before its initialized
+        const once=190;//block scope and it have temporal dead zone (TDZ)
+        // once=1200;// its cann't be reassign and redeclared the variable 
+        console.log(once)
+
+        
+    </script>
+    
+</body>
+</html>
