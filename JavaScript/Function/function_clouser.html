@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clousre</title>
+</head>
+<body>
+    <script>
+        // console.log(this, ": this in global scope");
+        // function f1(){
+        //     console.log(this, ": this in function scope");
+        // }
+        // f1();
+
+        // let obj= {
+        //     name: "John",
+        //     age: 30,
+        //     thisValue: this,
+        //     greet: function(){
+        //         console.log(this, ": this in object scope");
+        //         console.log(this.name, ": this in object scope");
+        //     }
+        // }
+
+        // console.log(obj.thisValue, ": this in object scope");
+        // console.log(obj.greet(), ": this in object scope");
+
+        //  function outer(){
+        //      debugger
+        //      var outerVariable= "I am outer variable";
+        //      function inner(){
+        //          console.log(outerVariable,":Accesing value from outer function")
+        //      }
+        //      return inner(); // returning inner function
+         
+        //  outer();
+        //     }
+        
+        function outer(){
+            // debugger
+            var outer="i am outer variabale"
+
+            function inner(){
+                console.log(outer,"i am inner fuction");
+
+            }
+            return inner();
+        };
+
+        
+
+       outer();
+
+        
+    </script>
+</body>
+</html>

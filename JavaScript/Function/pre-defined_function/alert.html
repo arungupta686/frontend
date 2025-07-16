@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // window.alert()
+        // alert();
+
+        function f1(){
+            // debugger
+            // return alert("HII there I am new to JS")
+            console.log(arguments,"Arguments Value")
+        }
+
+        f1(1,2,3,4);
+
+        let myAlert = alert("Hii Js");
+        console.log("Alert Value:",myAlert)
+
+        class Student{
+            constructor(name, age,id){
+                this.name= name;
+                this.age = age;
+                this.id= id;
+            }
+        }
+
+        let obj =  new Student("Sanjaya", 30, 101);
+        let obj1 =  new Student("Aman", 28, 102);
+
+        console.log(obj)
+        console.log(obj1)
+
+        class teacher{
+            constructor(name,age,id){
+                this.name=name
+                this.age=age
+                this.id=id
+            }
+        }
+
+        let T1=new teacher("rohit",31,110011)
+        console.log(T1)
+
+       
+
+    </script>
+</body>
+</html>

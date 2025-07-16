@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function_curring</title>
+</head>
+<body>
+    <script>
+    //  always better to used in event senarios
+        function add(a){
+            return function(b){
+                return function(c){
+                    return a+b+c;
+                }
+            }
+        }
+
+        console.log(add(4)(2)(3)); // 9
+    </script>
+</body>
+</html>

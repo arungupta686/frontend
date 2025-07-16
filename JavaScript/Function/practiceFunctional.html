@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice functional</title>
+</head>
+<body>
+    <script>        
+        // 1.function declaration
+        // 2.function expression
+        // 3.IIFE (Immediately Invoked Function Expression)
+        
+        // 1. function declaration
+        function add(a,b){
+            console.log(a+b);       
+        }
+
+        add(2,3)
+        // 2.function expression
+        let sub = function(a,b){
+            console.log(a-b)
+        }
+        sub(5,3);
+        (function(a,b){console.log(a+b, "IIFE")})(5,8);
+         
+      
+    </script>
+    
+</body>
+</html>

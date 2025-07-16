@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>  
+
+        let num1=Number(prompt("enter number :"));
+        let arthemetic=prompt("enter arthmetic opetrator :")
+        let num2=Number(prompt("enter number: "));
+
+
+     if(arthemetic=="+"){
+        function add(num1,num2 ){  //paramter in function
+            ans=num1+num2;
+            return ans;
+        }
+        addtion=add(num1,num2)
+        console.log("value of addtion",addtion)
+     }
+     else if(arthemetic=="-"){
+        function subtract(num1,num2 ){  //paramter in function
+            ans=num1-num2;
+            return ans;
+        }
+        subtraction=subtract(num1,num2);
+        console.log("value of subtraction :",subtraction);
+
+     }
+     else if(arthemetic=="*"){
+        function multiplication(num1,num2 ){  //paramter in function
+            ans=num1*num2;
+            return ans;
+        }
+        multipley=multiplication(num1,num2);
+        console.log("value of multipley :",multipley);
+
+     }
+     else if(arthemetic=="/"){
+        function division(num1,num2 ){  //paramter in function
+            ans=num1/num2;
+            return ans;
+        }
+        divide=division(num1,num2);
+        console.log("value of divide",divide);
+
+     }
+     else{
+        function mod(num1,num2 ){  //paramter in function
+            ans=num1%num2;
+            return ans;
+        }
+            modules=mod(num1,num2);
+            console.log("value of modules",modules);
+
+     }
+
+      
+
+
+    </script>
+</body>
+</html>

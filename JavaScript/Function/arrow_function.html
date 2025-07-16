@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+</head>
+<body>
+    <script>
+        
+        //Arrow function is a shorter syntax for writing function expressions in JavaScript.
+
+        var f1 = function(){
+            console.log(this,"this value in FE")
+        } // function expression
+        f1();
+        var f2 = ()=>{
+            console.log(this,"this value in arrow function");
+        } // arrow function
+        f2();
+
+
+
+        let fullName = {
+            fname: "Sanju",
+            lname: "Nayak",
+            fullName: function(){
+                console.log(this.fname," ", this.lname)
+                console.log(`${this.fname} ${this.lname}`)
+            }
+        }
+
+        let EmpName = {
+            name: "Aman",
+            id:101,
+            EmpDetails: ()=>{
+                // console.log("Emp Details:" this.name)
+            }
+        }
+    
+    //    let arr= [];
+    //    arr.map(()=>{
+
+    //    })
+
+       let arrowFunction=(a,b)=>{
+        return (a+b);
+       }
+       console.log(arrowFunction(2,3))
+    </script>
+</body>
+</html>
